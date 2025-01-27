@@ -11,15 +11,15 @@ export class MailService {
       port: 465,
       secure: true, // Use SSL for port 465
       auth: {
-        user: 'contact2tayib@gmail.com',
-        pass: 'nxqypwqgfohdnbzj', // App password (for Gmail)
+        user: '',
+        pass: '', // App password (for Gmail)
       },
     });
   }
 
   async sendMail(to: string, subject: string, text: string, html: string) {
     const mailOptions = {
-      from: 'contact2tayib@gmail.com', // Sender email
+      from: '', // Sender email
       to,
       subject,
       text,

@@ -3,7 +3,6 @@ import { diskStorage } from 'multer';
 import { v4 as uuidv4 } from 'uuid';
 import * as path from 'path';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { Express } from 'express';
 
 @Injectable()
 export class FileUploadService {
